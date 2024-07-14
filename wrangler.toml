@@ -1,5 +1,6 @@
 name = "sam_backend"
 compatibility_date = "2024-07-13"
+node_compat = true
 
 # [vars]
 # MY_VAR = "my-variable"

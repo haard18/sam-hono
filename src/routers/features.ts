@@ -4,6 +4,7 @@ import { cors } from "hono/cors";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const featRouter = new Hono();
 featRouter.use(cors());
+const genAI = new GoogleGenerativeAI('AIzaSyCC_Ll7zh5I7pz0wlrx_GsU7LVHzLPOOAcxxc');
 featRouter.post('/aiSummary', async (c) => {
     try {
         const requestBody = await c.req.json();
