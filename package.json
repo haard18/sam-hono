@@ -5,8 +5,10 @@
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.14.1",
     "@permaweb/aoconnect": "^0.0.56",
     "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "graphql-tag": "^2.12.6",
     "hono": "^4.4.13"
   },

@@ -3,6 +3,7 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import processRouter from './routers/processRouter'
 import messageRouter from './routers/messageRouter'
+import featRouter from './routers/features'
 
 const app = new Hono()
 
@@ -13,6 +14,7 @@ app.get('/', (c) => {
 })
 app.route('/api/process',processRouter)
 app.route('/api/message',messageRouter)
+app.route('/api/feat',featRouter)
 // app.post('/getInfo',async(c)=>{
 //   const {processId}=await c.req.json()
 //   const response=await axios.post(
